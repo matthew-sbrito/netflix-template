@@ -1,0 +1,100 @@
+.featured{
+  height:100vh;
+}
+.featured-vertical{
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to top, #111 10%, transparent 90%);
+}
+.featured-horizontal{
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to right, #111 30%, transparent 70%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 70px 0 200px 35px;
+}
+
+.featured-name{
+  font-size: 60px;
+  font-weight: bold;
+}
+.featured-info{
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.featured-points{
+  color: #46d369;
+}
+.featured-points,
+.featured-year,
+.featured-seasons{
+  display: inline-block;
+  margin-right: 15px;
+}
+.featured-description,
+.featured-genres{
+  margin-top: 15px;
+  font-size: 22px;
+  color: #999;
+  max-width: 37%;
+}
+.featured-buttons{
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+.featured-buttons a{
+  margin-bottom: 15px;
+}
+.featured-watch, 
+.featured-add{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 13px 26px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 10px;
+  opacity: 1;
+  transition: all ease 0.2s;
+}
+.featured-watch{
+  color: #000;
+  background-color: #fff;
+}
+.featured-add{
+  color: #fff;
+  background-color: #333;
+}
+.featured-watch:hover,
+.featured-add:hover{
+  opacity: 0.7;
+}
+@media (max-width: 767px){
+  .featured {
+    height: 92vh;
+  }
+  .featured-name{
+    font-size: 35px;
+  }
+  .featured-info{
+    font-size: 16px;
+  }
+  .featured-description{
+    font-size: 14px;
+    max-width: 100%;
+    margin-right: 30px;
+  }
+  .featured-watch,
+  .featured-add{
+    font-size: 16px;
+  }
+  .featured-genres{
+    font-size: 14px;
+  }
+}
